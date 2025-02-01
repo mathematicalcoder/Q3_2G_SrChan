@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="css, css target, html" />
+    <meta name="description" content="CS3 Q3 2nd Graded Exercise" />
+    <meta name="author" content="Kaiser Chan" />
+    <meta name="revised" content="02-01-2024" />
+    <title>CS3 Q3 2nd Graded Exercise</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <p><a href="#div1" id="a1">Click me to go to the first div!</a></p>
+    <p><a href="#div2" id="a2">Click me to go to the second div!</a></p>
+    <div id="div1"><p>First div</p></div>
+    <div id="div2"><p>Second div</p></div>
+  </body>
+  <footer>
+    <p>Copyright &copy; K. Chan</p>
+  </footer>
+  <style>
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom:100px;
+  text-align:justify;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    width: 90%;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  color: midnightblue;
+}
+
+a#a1 {
+  color: midnightblue;
+  background-color: lightskyblue;
+}
+
+a#a2 {
+  color: royalblue;
+  background-color: lightblue;
+}
+
+a:hover {
+  font-size: 18px;
+  font-style: italic;
+}
+
+a#a1:hover {
+  color: lightskyblue;
+  background-color: midnightblue;
+}
+
+a#a2:hover {
+  color: lightblue;
+  background-color: royalblue;
+}
+
+div {
+  margin: 5px; padding: 5px;
+  border: 2px solid slategray;
+  border-radius: 5px;
+  color: slategray;
+  overflow: auto;
+  text-align: center;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+div:target {
+  color: green;
+  background-color: lightseagreen;
+  border-color: green;
+}
+
+div#div2:target {
+  border: 10px dotted green;
+}
+
+.code,
+pre,
+code {
+  font-family: ui-monospace, Menlo, Monaco, "Segoe UI Mono", "Roboto Mono",
+    "Oxygen Mono", "Ubuntu Mono", "Source Code Pro", "Fira Mono",
+    "Droid Sans Mono", "Consolas", "Courier New", monospace;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  max-height:100px;
+  background-color: midnightblue;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+}
+  </style>
+</html>
